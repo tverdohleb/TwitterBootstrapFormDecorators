@@ -33,7 +33,7 @@ Installation
 
 ### Example Form
         <?php
-            use \CaringBridge\Form\Form;
+            use \TwitterBootstrapFormDecorators\Form\Form;
 
             class Base extends Form
             {
