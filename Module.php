@@ -20,16 +20,6 @@ use Zend\Module\Manager,
 class Module implements AutoloaderProvider {
     
     /**
-     * Initialize Module
-     *
-     * @param  \Zend\Module\Manager $moduleManager
-     * @return void
-     */
-    public function init(Manager $moduleManager)
-    {
-    }
-
-    /**
      * Set Autoloader Configuration
      *
      * @return array
@@ -46,5 +36,10 @@ class Module implements AutoloaderProvider {
                 ),
             ),
         );
+    }
+
+    public function getConfig($env = null)
+    {
+        return include __DIR__ . '/config/module.config.php';
     }
 }
