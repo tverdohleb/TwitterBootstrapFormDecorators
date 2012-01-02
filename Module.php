@@ -17,8 +17,8 @@ use Zend\Module\Manager,
  * @category TwitterBootstrapFormDecorators
  * @package  Module
  */
-class Module implements AutoloaderProvider {
-    
+class Module implements AutoloaderProvider
+{    
     /**
      * Set Autoloader Configuration
      *

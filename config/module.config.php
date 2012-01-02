@@ -2,12 +2,12 @@
 return array(
     'di' => array(
         'instance' => array(
-            'Zend/View/HelperLoader' => array(
+            'Zend\View\HelperLoader' => array(
                 'parameters' => array(
                     'map' => array(
-                        'formSubmit' => 'TwitterBootstrapFormDecorator\View\Helper\FormSubmit',
-                        'formButton' => 'TwitterBootstrapFormDecorator\View\Helper\FormButton',
-                        'formErrors' => 'TwitterBootstrapFormDecorator\View\Helper\FormErrors',
+                        'formSubmit' => 'TwitterBootstrapFormDecorators\View\Helper\FormSubmit',
+                        'formButton' => 'TwitterBootstrapFormDecorators\View\Helper\FormButton',
+                        'formErrors' => 'TwitterBootstrapFormDecorators\View\Helper\FormErrors',
                     ),
                 ),
             ),
