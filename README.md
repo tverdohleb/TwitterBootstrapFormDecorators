@@ -11,16 +11,17 @@ Bootstrap 2.0-wip branch of forms within Zend Framework 2.
 Requirements
 ------------
 
-* [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
-* [Twitter Bootstrap 2](https://github.com/twitter/bootstrap/tree/2.0-wip)
+   * [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
+   * [Twitter Bootstrap 2](https://github.com/twitter/bootstrap/tree/2.0-wip)
 
 Current State
 ----------------
 Many of the main elements pretty much work... this is really a work in progress right now.
 What I know does not work:
-* Captcha
-* File
-* Probably other things :)
+
+   * Captcha
+   * File
+   * Probably other things :)
 
 
 Installation
