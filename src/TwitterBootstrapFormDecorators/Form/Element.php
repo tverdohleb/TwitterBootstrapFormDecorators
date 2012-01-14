@@ -49,4 +49,24 @@ class Element extends \Zend\Form\Element
         }
         return $this;
     }
+    
+    /**
+     * Specifies whether this element is a required field.
+     *
+     * Also sets the HTML5 'required' attribute.
+     *
+     * @param boolean $flag
+     * @return void
+     */
+    public function setRequired($flag = true)
+    {
+        if ($flag) {
+            $this->required = 'true';
+        } else {
+            if (isset($this->required)) {
+                unset($this->required);
+            }
+        }
+        return parent::setRequired($flag);
+    }
 }
