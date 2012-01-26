@@ -43,19 +43,25 @@ class FormText extends \Zend\View\Helper\FormText
         extract($info); // name, value, attribs, options, listsep, disable
 
         $prepend = '';
+        $append = '';
+
         if (isset($attribs['prepend'])) {
-            $prepend = '<span class="add-on">'
+            $prepend .= '<span class="add-on">'
                 . $this->view->vars()->escape($attribs['prepend'])
                 . '</span>';
             unset($attribs['prepend']);
         }
 
-        $append = '';
         if (isset($attribs['append'])) {
             $append = '<span class="add-on">'
                 . $this->view->vars()->escape($attribs['append'])
                 . '</span>';
             unset($attribs['append']);
+        }
+
+        if ($prepend || $append) {
+            $prepend = '<div class="input-prepend">' . $prepend;
+            $append = $append . '</div>';
         }
 
 
