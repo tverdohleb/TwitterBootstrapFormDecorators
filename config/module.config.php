@@ -5,9 +5,10 @@ return array(
             'Zend\View\HelperLoader' => array(
                 'parameters' => array(
                     'map' => array(
-                        'formSubmit' => 'TwitterBootstrapFormDecorators\View\Helper\FormSubmit',
                         'formButton' => 'TwitterBootstrapFormDecorators\View\Helper\FormButton',
                         'formErrors' => 'TwitterBootstrapFormDecorators\View\Helper\FormErrors',
+                        'formRadio'  => 'TwitterBootstrapFormDecorators\View\Helper\FormRadio',
+                        'formSubmit' => 'TwitterBootstrapFormDecorators\View\Helper\FormSubmit',
                         'formText'   => 'TwitterBootstrapFormDecorators\View\Helper\FormText',
                     ),
                 ),
