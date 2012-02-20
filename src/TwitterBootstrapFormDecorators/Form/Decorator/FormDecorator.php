@@ -47,7 +47,7 @@ class FormDecorator extends \Zend\Form\Decorator\FormDecorator
         if (null !== ($element = $this->getElement())) {
             if ($element instanceof ZendForm\Form) {
                 if (!$element->getAttrib('class')) {
-                    $element->setAttrib('class', 'horizontal-form');
+                    $element->setAttrib('class', 'form-horizontal');
                 }
             }
         }
