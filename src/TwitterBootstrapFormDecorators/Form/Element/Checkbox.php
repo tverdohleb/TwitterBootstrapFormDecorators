@@ -212,7 +212,7 @@ class Checkbox extends Xhtml
                  ->addDecorator('CheckboxLabel')
                  ->addDecorator(array('div-list' => 'HtmlTag'), array('tag' => 'div', 'class' => 'control-list'))
                  ->addDecorator(array('div' => 'HtmlTag'), array('tag' => 'div', 'class' => 'controls'))
-                 ->addDecorator('Fieldset', array('class' => 'control-group'));
+                 ->addDecorator('HtmlTag', array('tag' => 'div', 'class' => 'control-group'));
         }
         return $this;
     }
