@@ -290,7 +290,7 @@ class CheckboxLabel extends AbstractDecorator
         if (empty($label) && empty($tag)) {
             return $content;
         }
-
-        return sprintf('<label class="checkbox">%s %s</label>', $content, $label);
+        
+        return sprintf('<label class="checkbox" for="%s">%s %s</label>', $id, $content, $label);
     }
 }

@@ -54,9 +54,10 @@ class Radio extends Multi
         if ($this->loadDefaultDecoratorsIsDisabled()) {
             return $this;
         }
+        
         parent::loadDefaultDecorators();
-        $this->addDecorator('Label', array('tag' => 'dt',
-                                           'disableFor' => true));
+        $this->setAttrib('label_class', 'radio');
+
         return $this;
     }
 }

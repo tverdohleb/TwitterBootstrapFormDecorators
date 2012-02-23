@@ -12,6 +12,7 @@ return array(
     'TwitterBootstrapFormDecorators\Form\Decorator\Fieldset'      => __DIR__ . '/src/TwitterBootstrapFormDecorators/Form/Decorator/Fieldset.php',
     'TwitterBootstrapFormDecorators\Form\Decorator\CheckboxLabel' => __DIR__ . '/src/TwitterBootstrapFormDecorators/Form/Decorator/CheckboxLabel.php',
     'TwitterBootstrapFormDecorators\Form\Form'                    => __DIR__ . '/src/TwitterBootstrapFormDecorators/Form/Form.php',
+    'TwitterBootstrapFormDecorators\Form\SubForm'                 => __DIR__ . '/src/TwitterBootstrapFormDecorators/Form/SubForm.php',
     'TwitterBootstrapFormDecorators\Form\Element\Captcha'         => __DIR__ . '/src/TwitterBootstrapFormDecorators/Form/Element/Captcha.php',
     'TwitterBootstrapFormDecorators\Form\Element\Multi'           => __DIR__ . '/src/TwitterBootstrapFormDecorators/Form/Element/Multi.php',
     'TwitterBootstrapFormDecorators\Form\Element\Radio'           => __DIR__ . '/src/TwitterBootstrapFormDecorators/Form/Element/Radio.php',

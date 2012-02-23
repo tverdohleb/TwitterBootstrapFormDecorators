@@ -37,7 +37,7 @@ class Errors extends \Zend\Form\Decorator\Errors
             return $content;
         }
 
-        $decorator = $element->getDecorator('fieldset');
+        $decorator = $element->getDecorator('HtmlTag');
         if ($decorator) {
             $decorator->setOption('class', $decorator->getOption('class') . ' error');
         }
@@ -45,6 +45,7 @@ class Errors extends \Zend\Form\Decorator\Errors
         $separator = $this->getSeparator();
         $placement = $this->getPlacement();
         $errors    = $view->formErrors($errors, $this->getOptions());
+        
 
         switch ($placement) {
             case self::APPEND:
