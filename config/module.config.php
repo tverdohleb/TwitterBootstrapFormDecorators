@@ -13,8 +13,10 @@ return array(
                     ),
                 ),
             ),
-            'Zend\View\PhpRenderer' => array(
-                'broker' => 'Zend\View\HelperBroker',
+            'Zend\View\Renderer\PhpRenderer' => array(
+                'parameters' => array(
+                    'broker' => 'Zend\View\HelperBroker',
+                ),
             ),
             'Zend\View\HelperBroker' => array(
                 'parameters' => array(
