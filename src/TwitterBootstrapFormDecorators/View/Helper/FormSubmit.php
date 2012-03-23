@@ -40,7 +40,7 @@ class FormSubmit extends \Zend\View\Helper\FormSubmit
     public function __invoke($name, $value = null, $attribs = null)
     {
         if (!isset($attribs['class'])) {
-            $attribs['class'] = 'btn primary';
+            $attribs['class'] = 'btn btn-primary';
         }
         return parent::__invoke($name, $value, $attribs);
     }
