@@ -9,6 +9,7 @@ return array(
                         'formErrors' => 'TwitterBootstrapFormDecorators\View\Helper\FormErrors',
                         'formRadio'  => 'TwitterBootstrapFormDecorators\View\Helper\FormRadio',
                         'formSubmit' => 'TwitterBootstrapFormDecorators\View\Helper\FormSubmit',
+                        'formReset' => 'TwitterBootstrapFormDecorators\View\Helper\FormReset',
                         'formText'   => 'TwitterBootstrapFormDecorators\View\Helper\FormText',
                     ),
                 ),
