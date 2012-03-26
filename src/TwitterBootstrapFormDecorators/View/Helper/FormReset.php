@@ -13,17 +13,17 @@
 namespace TwitterBootstrapFormDecorators\View\Helper;
 
 /**
- * Helper to generate a "submit" button
+ * Helper to generate a "button" element
  *
- * @uses       \Zend\View\Helper\FormSubmit
+ * @uses       \Zend\View\Helper\FormReset
  * @category   TwitterBootstrapFormDecorators
  * @package    TwitterBootstrapFormDecorators\View
  * @subpackage Helper
  */
-class FormSubmit extends \Zend\View\Helper\FormSubmit
+class FormReset extends \Zend\View\Helper\FormReset
 {
     /**
-     * Generates a 'submit' button.
+     * Generates a 'reset' element.
      *
      * @access public
      *
@@ -37,10 +37,10 @@ class FormSubmit extends \Zend\View\Helper\FormSubmit
      *
      * @return string The element XHTML.
      */
-    public function __invoke($name, $value = null, $attribs = null)
+    public function __invoke($name = null, $value = null, $attribs = null)
     {
         if (!isset($attribs['class'])) {
-            $attribs['class'] = 'btn btn-primary';
+            $attribs['class'] = 'btn';
         }
         return parent::__invoke($name, $value, $attribs);
     }

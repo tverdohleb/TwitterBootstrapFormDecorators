@@ -37,7 +37,7 @@ class Submit extends \Zend\Form\Element\Submit
 
         $decorators = $this->getDecorators();
         if (empty($decorators)) {
-            $this->addDecorator('ViewHelper', array('class' => 'btn primary'));
+            $this->addDecorator('ViewHelper', array('class' => 'btn btn-primary'));
         }
         return $this;
     }
