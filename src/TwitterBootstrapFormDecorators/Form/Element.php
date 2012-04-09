@@ -43,9 +43,9 @@ class Element extends \Zend\Form\Element
             $this->addDecorator('ViewHelper')
                  ->addDecorator('Errors', array('class' => 'help-inline'))
                  ->addDecorator('Description', array('tag' => 'span', 'class' => 'help-block'))
-                 ->addDecorator(array('div' => 'HtmlTag'), array('tag' => 'div', 'class' => 'controls'))
+                 ->addDecorator(array('control' => 'HtmlTag'), array('tag' => 'div', 'class' => 'controls'))
                  ->addDecorator('Label', array('class' => 'control-label'))
-                 ->addDecorator('HtmlTag', array('class' => 'control-group', 'tag' => 'div'));
+                 ->addDecorator(array('control-group' => 'HtmlTag'), array('class' => 'control-group', 'tag' => 'div'));
         }
         return $this;
     }

@@ -210,9 +210,9 @@ class Checkbox extends Xhtml
                  ->addDecorator('Errors', array('class' => 'help-inline'))
                  ->addDecorator('Description', array('tag' => 'span', 'class' => 'help-inline'))
                  ->addDecorator('CheckboxLabel')
-                 ->addDecorator(array('div-list' => 'HtmlTag'), array('tag' => 'div', 'class' => 'control-list'))
-                 ->addDecorator(array('div' => 'HtmlTag'), array('tag' => 'div', 'class' => 'controls'))
-                 ->addDecorator('HtmlTag', array('tag' => 'div', 'class' => 'control-group'));
+                 ->addDecorator(array('control-list' => 'HtmlTag'), array('tag' => 'div', 'class' => 'control-list'))
+                 ->addDecorator(array('controls' => 'HtmlTag'), array('tag' => 'div', 'class' => 'controls'))
+                 ->addDecorator(array('control-group', 'HtmlTag'), array('tag' => 'div', 'class' => 'control-group'));
         }
         return $this;
     }

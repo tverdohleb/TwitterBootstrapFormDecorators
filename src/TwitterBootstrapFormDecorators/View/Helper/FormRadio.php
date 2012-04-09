@@ -87,7 +87,7 @@ class FormRadio extends \Zend\View\Helper\FormRadio
         $list  = array();
 
         // should the name affect an array collection?
-        $name = $this->view->vars()->escape($name);
+        $name = $this->view->escape($name);
         if ($this->_isArray && ('[]' != substr($name, -2))) {
             $name .= '[]';
         }
@@ -107,7 +107,7 @@ class FormRadio extends \Zend\View\Helper\FormRadio
 
             // Should the label be escaped?
             if ($escape) {
-                $opt_label = $this->view->vars()->escape($opt_label);
+                $opt_label = $this->view->escape($opt_label);
             }
 
             // is it disabled?
@@ -134,7 +134,7 @@ class FormRadio extends \Zend\View\Helper\FormRadio
                     . '<input type="' . $this->_inputType . '"'
                     . ' name="' . $name . '"'
                     . ' id="' . $optId . '"'
-                    . ' value="' . $this->view->vars()->escape($opt_value) . '"'
+                    . ' value="' . $this->view->escape($opt_value) . '"'
                     . $checked
                     . $disabled
                     . $this->_htmlAttribs($attribs)

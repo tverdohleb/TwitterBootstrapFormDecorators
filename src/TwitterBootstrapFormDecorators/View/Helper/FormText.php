@@ -47,14 +47,14 @@ class FormText extends \Zend\View\Helper\FormText
 
         if (isset($attribs['prepend'])) {
             $prepend .= '<span class="add-on">'
-                . $this->view->vars()->escape($attribs['prepend'])
+                . $this->view->escape($attribs['prepend'])
                 . '</span>';
             unset($attribs['prepend']);
         }
 
         if (isset($attribs['append'])) {
             $append = '<span class="add-on">'
-                . $this->view->vars()->escape($attribs['append'])
+                . $this->view->escape($attribs['append'])
                 . '</span>';
             unset($attribs['append']);
         }
